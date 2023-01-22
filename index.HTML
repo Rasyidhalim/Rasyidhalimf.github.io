@@ -1,0 +1,72 @@
+<html>
+    <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<center>
+<body>
+<div class="container w3-white w3-card-4">
+ <img src="banner.png" style="width: 100%; height: 350px;">
+</div>
+</center>
+
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openKota('home')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('mobil')">Mobil</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('motor')">Motor</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('foto')">kampus</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('profil')">Profil</button>
+<!- Membuat Dropdown menu ->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">hobi</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openKota('mobil')">Mobil</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('motor')">Motor</button>
+        </div>
+    </div>
+</div>
+
+<div id="home" class="w3-container kota w3-animate-zoom w3-center" style="display:block">
+<h2>Selamat datang <hr>
+welcome
+</h2>
+</div>
+
+<div id="mobil" class="w3-container kota  w3-animate-fading w3-center" style="display:none">
+    <h2>mobil impian</h2>   
+    <img src="civic.png" width="50%">
+</div>
+
+<div id="motor" class=" w3-center w3-container kota w3-animate-left" style="display:none">
+    <h2>motor Pribadi</h2>
+    <img src="rett.png" width="30%">
+</div>
+
+<div id="foto" class="w3-container kota w3-center" style="display:none">
+ <h2>tempat belajar</h2>
+ <img src="unikom.png" class="w3-spin" width="20%">
+</div>
+
+<div id="profil" class="w3-container kota w3-center" style="display:none">
+    <img src="cid.png" width="10%">
+    <h1>dibuat oleh:
+    Rasyid halim Firdaus
+    <br>
+    10122150
+    <br>
+    IF-4
+   </div>
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+
+</html>
