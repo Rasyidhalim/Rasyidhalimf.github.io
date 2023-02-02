@@ -1,0 +1,44 @@
+<html>
+    <title>BANDUNG ELEKTRONIK</title> 
+
+<center>
+    <div class="w3-container w3-cyan">
+        <h1>BANDUNG ELEKTRONIK</h1>
+    </div> 
+<body>
+    <table>
+    <form action="rasyid.php" method="post">
+    <p>
+        <tr><td><label>Nama pembeli</label>
+        <td><input class="w3-input " type="text" name="namapembeli">
+    </p>
+    <p>
+        <tr><td>Merk TV</td><td>UKURAN</td></tr>
+    <p>
+        <tr><td><select name="merk">
+            <option value="SAMSUNG">samsung</option>
+            <option value="LG">lg</option>
+            <option value="SONY">sony</option>
+            </select>
+            
+            <td><input type="radio" name="ukuran" value="24 Inc">24 Inc
+            <tr><td><td><input type="radio" name="ukuran" value="32 Inc">32 Inc</tr>
+                <tr><td><td><input type="radio" name="ukuran" value="43 Inc">43 Inc</tr>
+
+    </p>
+    <p>
+        <tr><td><label class="w3-text-purple">Aksesoris</label>
+        <td><input class="w3-check w3-blue" type="radio" name="aksesoris" value="ANTENA">ANTENA
+        <tr><td><td><input class="w3-check w3-blue" type="radio" name="aksesoris" value="DVD">DVD
+            <tr><td><td><input class="w3-check w3-blue" type="radio" name="aksesoris" value="BLUERAY">BLUERAY
+
+                    <tr><td><label>jumlah</label>
+                        <td><input class="w3-input w3-blue" type="text" name="jumlah">        
+    </p>
+    </table>
+    <hr>
+    <button class="w3-btn w3-round-xxlarge w3-pink">Proses</button>
+    <button class="w3-btn w3-round-xxlarge w3-pink" type="reset">Reset</button>
+    </form>
+
+</html>
